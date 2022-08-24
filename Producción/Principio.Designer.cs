@@ -52,11 +52,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.pnl_fondo.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnl_menu
             // 
-            this.pnl_menu.BackColor = System.Drawing.Color.White;
+            this.pnl_menu.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pnl_menu.Controls.Add(this.pb_lista);
             this.pnl_menu.Controls.Add(this.btn_lista);
             this.pnl_menu.Controls.Add(this.pb_mecanico);
@@ -74,7 +75,7 @@
             // 
             // btn_lista
             // 
-            this.btn_lista.BackColor = System.Drawing.Color.White;
+            this.btn_lista.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_lista.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_lista.FlatAppearance.BorderSize = 0;
             this.btn_lista.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -89,10 +90,14 @@
             this.btn_lista.Text = "LISTA";
             this.btn_lista.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_lista.UseVisualStyleBackColor = false;
+            this.btn_lista.BackColorChanged += new System.EventHandler(this.btn_mecanico_BackColorChanged);
+            this.btn_lista.Click += new System.EventHandler(this.btn_lista_Click);
+            this.btn_lista.MouseEnter += new System.EventHandler(this.btn_mecanico_MouseEnter);
+            this.btn_lista.MouseLeave += new System.EventHandler(this.btn_mecanico_MouseLeave);
             // 
             // btn_informe
             // 
-            this.btn_informe.BackColor = System.Drawing.Color.White;
+            this.btn_informe.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btn_informe.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_informe.FlatAppearance.BorderSize = 0;
             this.btn_informe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -107,7 +112,10 @@
             this.btn_informe.Text = "INFORMES";
             this.btn_informe.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_informe.UseVisualStyleBackColor = false;
+            this.btn_informe.BackColorChanged += new System.EventHandler(this.btn_mecanico_BackColorChanged);
             this.btn_informe.Click += new System.EventHandler(this.btn_informe_Click);
+            this.btn_informe.MouseEnter += new System.EventHandler(this.btn_mecanico_MouseEnter);
+            this.btn_informe.MouseLeave += new System.EventHandler(this.btn_mecanico_MouseLeave);
             // 
             // btn_electrico
             // 
@@ -124,10 +132,14 @@
             this.btn_electrico.Text = "MANTENIMIENTO ELECTRICO";
             this.btn_electrico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btn_electrico.UseVisualStyleBackColor = true;
+            this.btn_electrico.BackColorChanged += new System.EventHandler(this.btn_mecanico_BackColorChanged);
             this.btn_electrico.Click += new System.EventHandler(this.btn_electrico_Click);
+            this.btn_electrico.MouseEnter += new System.EventHandler(this.btn_mecanico_MouseEnter);
+            this.btn_electrico.MouseLeave += new System.EventHandler(this.btn_mecanico_MouseLeave);
             // 
             // btn_mecanico
             // 
+            this.btn_mecanico.AutoEllipsis = true;
             this.btn_mecanico.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_mecanico.FlatAppearance.BorderSize = 0;
             this.btn_mecanico.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -141,14 +153,16 @@
             this.btn_mecanico.TabIndex = 3;
             this.btn_mecanico.Text = "MANTENIMIENTO MECANICO";
             this.btn_mecanico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btn_mecanico.UseVisualStyleBackColor = true;
+            this.btn_mecanico.UseVisualStyleBackColor = false;
+            this.btn_mecanico.BackColorChanged += new System.EventHandler(this.btn_mecanico_BackColorChanged);
             this.btn_mecanico.Click += new System.EventHandler(this.btn_mecanico_Click);
+            this.btn_mecanico.MouseEnter += new System.EventHandler(this.btn_mecanico_MouseEnter);
+            this.btn_mecanico.MouseLeave += new System.EventHandler(this.btn_mecanico_MouseLeave);
             // 
             // pnl_titulo
             // 
             this.pnl_titulo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
             this.pnl_titulo.Controls.Add(this.pb_logo);
-            this.pnl_titulo.Controls.Add(this.btn_menu);
             this.pnl_titulo.Controls.Add(this.pictureBox3);
             this.pnl_titulo.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnl_titulo.Location = new System.Drawing.Point(0, 0);
@@ -166,6 +180,9 @@
             this.pb_lista.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_lista.TabIndex = 9;
             this.pb_lista.TabStop = false;
+            this.pb_lista.Click += new System.EventHandler(this.btn_lista_Click);
+            this.pb_lista.MouseEnter += new System.EventHandler(this.pb_mecanico_MouseEnter);
+            this.pb_lista.MouseLeave += new System.EventHandler(this.pb_mecanico_MouseLeave);
             // 
             // pb_mecanico
             // 
@@ -178,6 +195,8 @@
             this.pb_mecanico.TabIndex = 7;
             this.pb_mecanico.TabStop = false;
             this.pb_mecanico.Click += new System.EventHandler(this.btn_mecanico_Click);
+            this.pb_mecanico.MouseEnter += new System.EventHandler(this.pb_mecanico_MouseEnter);
+            this.pb_mecanico.MouseLeave += new System.EventHandler(this.pb_mecanico_MouseLeave);
             // 
             // pb_electrico
             // 
@@ -189,6 +208,9 @@
             this.pb_electrico.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pb_electrico.TabIndex = 6;
             this.pb_electrico.TabStop = false;
+            this.pb_electrico.Click += new System.EventHandler(this.btn_electrico_Click);
+            this.pb_electrico.MouseEnter += new System.EventHandler(this.pb_mecanico_MouseEnter);
+            this.pb_electrico.MouseLeave += new System.EventHandler(this.pb_mecanico_MouseLeave);
             // 
             // pb_informe
             // 
@@ -201,6 +223,8 @@
             this.pb_informe.TabIndex = 2;
             this.pb_informe.TabStop = false;
             this.pb_informe.Click += new System.EventHandler(this.btn_informe_Click);
+            this.pb_informe.MouseEnter += new System.EventHandler(this.pb_mecanico_MouseEnter);
+            this.pb_informe.MouseLeave += new System.EventHandler(this.pb_mecanico_MouseLeave);
             // 
             // pb_logo
             // 
@@ -215,7 +239,7 @@
             // btn_menu
             // 
             this.btn_menu.Image = global::Producción.Properties.Resources.menu_dark;
-            this.btn_menu.Location = new System.Drawing.Point(204, 12);
+            this.btn_menu.Location = new System.Drawing.Point(6, 3);
             this.btn_menu.Name = "btn_menu";
             this.btn_menu.Size = new System.Drawing.Size(32, 32);
             this.btn_menu.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,6 +260,7 @@
             // pnl_fondo
             // 
             this.pnl_fondo.BackColor = System.Drawing.SystemColors.Control;
+            this.pnl_fondo.Controls.Add(this.btn_menu);
             this.pnl_fondo.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnl_fondo.Location = new System.Drawing.Point(294, 0);
             this.pnl_fondo.Name = "pnl_fondo";
@@ -264,6 +289,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pb_logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btn_menu)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.pnl_fondo.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

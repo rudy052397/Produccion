@@ -29,20 +29,17 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mecanico));
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties5 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties6 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties7 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties8 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Mecanico));
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties1 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties2 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties3 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
-            Bunifu.UI.WinForms.BunifuTextBox.StateProperties stateProperties4 = new Bunifu.UI.WinForms.BunifuTextBox.StateProperties();
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.dgv_resultado = new System.Windows.Forms.DataGridView();
             this.gb_Busqueda = new System.Windows.Forms.GroupBox();
+            this.txt_Equipo = new Bunifu.UI.WinForms.BunifuTextBox();
             this.lbl_ubicacion = new System.Windows.Forms.Label();
             this.lbl_motor = new System.Windows.Forms.Label();
             this.btn_Buscar = new System.Windows.Forms.Button();
@@ -50,9 +47,6 @@
             this.lbl_resultado = new System.Windows.Forms.Label();
             this.opciones = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.lbl_titulo = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.txt_Equipo = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.bunifuTextBox1 = new Bunifu.UI.WinForms.BunifuTextBox();
-            this.lbl_ = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgv_resultado)).BeginInit();
             this.gb_Busqueda.SuspendLayout();
             this.SuspendLayout();
@@ -76,24 +70,24 @@
             this.dgv_resultado.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgv_resultado.BackgroundColor = System.Drawing.SystemColors.Control;
             this.dgv_resultado.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgv_resultado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgv_resultado.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dgv_resultado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Century Gothic", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.Padding = new System.Windows.Forms.Padding(5, 0, 6, 0);
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgv_resultado.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Century Gothic", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle4.Padding = new System.Windows.Forms.Padding(5, 0, 6, 0);
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgv_resultado.DefaultCellStyle = dataGridViewCellStyle4;
             this.dgv_resultado.Location = new System.Drawing.Point(48, 305);
             this.dgv_resultado.Margin = new System.Windows.Forms.Padding(2);
             this.dgv_resultado.Name = "dgv_resultado";
@@ -111,8 +105,6 @@
             // 
             this.gb_Busqueda.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.gb_Busqueda.Controls.Add(this.bunifuTextBox1);
-            this.gb_Busqueda.Controls.Add(this.lbl_);
             this.gb_Busqueda.Controls.Add(this.txt_Equipo);
             this.gb_Busqueda.Controls.Add(this.lbl_ubicacion);
             this.gb_Busqueda.Controls.Add(this.lbl_motor);
@@ -126,97 +118,6 @@
             this.gb_Busqueda.Size = new System.Drawing.Size(1082, 136);
             this.gb_Busqueda.TabIndex = 19;
             this.gb_Busqueda.TabStop = false;
-            // 
-            // lbl_ubicacion
-            // 
-            this.lbl_ubicacion.AutoSize = true;
-            this.lbl_ubicacion.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_ubicacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
-            this.lbl_ubicacion.Location = new System.Drawing.Point(650, 47);
-            this.lbl_ubicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_ubicacion.Name = "lbl_ubicacion";
-            this.lbl_ubicacion.Size = new System.Drawing.Size(40, 20);
-            this.lbl_ubicacion.TabIndex = 14;
-            this.lbl_ubicacion.Text = "ZONA";
-            // 
-            // lbl_motor
-            // 
-            this.lbl_motor.AutoSize = true;
-            this.lbl_motor.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_motor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
-            this.lbl_motor.Location = new System.Drawing.Point(341, 46);
-            this.lbl_motor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_motor.Name = "lbl_motor";
-            this.lbl_motor.Size = new System.Drawing.Size(56, 20);
-            this.lbl_motor.TabIndex = 13;
-            this.lbl_motor.Text = "EQUIPO";
-            // 
-            // btn_Buscar
-            // 
-            this.btn_Buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_Buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.btn_Buscar.FlatAppearance.BorderSize = 0;
-            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Buscar.ForeColor = System.Drawing.Color.White;
-            this.btn_Buscar.Location = new System.Drawing.Point(977, 44);
-            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
-            this.btn_Buscar.Name = "btn_Buscar";
-            this.btn_Buscar.Size = new System.Drawing.Size(71, 58);
-            this.btn_Buscar.TabIndex = 12;
-            this.btn_Buscar.Text = "BUSCAR";
-            this.btn_Buscar.UseVisualStyleBackColor = false;
-            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
-            // 
-            // cbx_zona
-            // 
-            this.cbx_zona.BackColor = System.Drawing.SystemColors.Control;
-            this.cbx_zona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbx_zona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cbx_zona.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbx_zona.FormattingEnabled = true;
-            this.cbx_zona.Items.AddRange(new object[] {
-            "--Ingrese la Ubicación--",
-            "DESPACHOS",
-            "PINZA CHICA, GRANDE",
-            "TOLVA"});
-            this.cbx_zona.Location = new System.Drawing.Point(653, 73);
-            this.cbx_zona.Name = "cbx_zona";
-            this.cbx_zona.Size = new System.Drawing.Size(296, 29);
-            this.cbx_zona.TabIndex = 11;
-            this.cbx_zona.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbx_zona_KeyPress);
-            // 
-            // lbl_resultado
-            // 
-            this.lbl_resultado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.lbl_resultado.AutoSize = true;
-            this.lbl_resultado.Font = new System.Drawing.Font("Century Gothic", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_resultado.Location = new System.Drawing.Point(93, 511);
-            this.lbl_resultado.Name = "lbl_resultado";
-            this.lbl_resultado.Size = new System.Drawing.Size(54, 18);
-            this.lbl_resultado.TabIndex = 20;
-            this.lbl_resultado.Text = "label1";
-            // 
-            // opciones
-            // 
-            this.opciones.Name = "opciones";
-            this.opciones.Size = new System.Drawing.Size(61, 4);
-            this.opciones.Closed += new System.Windows.Forms.ToolStripDropDownClosedEventHandler(this.opciones_Closed);
-            this.opciones.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.opciones_ItemClicked);
-            // 
-            // lbl_titulo
-            // 
-            this.lbl_titulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lbl_titulo.AutoSize = true;
-            this.lbl_titulo.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
-            this.lbl_titulo.Location = new System.Drawing.Point(345, 27);
-            this.lbl_titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_titulo.Name = "lbl_titulo";
-            this.lbl_titulo.Size = new System.Drawing.Size(288, 47);
-            this.lbl_titulo.TabIndex = 3;
-            this.lbl_titulo.Text = "EQUIPOS 2022";
             // 
             // txt_Equipo
             // 
@@ -246,7 +147,7 @@
             this.txt_Equipo.IconRight = null;
             this.txt_Equipo.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Equipo.Lines = new string[0];
-            this.txt_Equipo.Location = new System.Drawing.Point(345, 69);
+            this.txt_Equipo.Location = new System.Drawing.Point(39, 64);
             this.txt_Equipo.MaxLength = 32767;
             this.txt_Equipo.MinimumSize = new System.Drawing.Size(1, 1);
             this.txt_Equipo.Modified = false;
@@ -294,92 +195,96 @@
             this.txt_Equipo.WordWrap = true;
             this.txt_Equipo.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Equipo_KeyPress);
             // 
-            // bunifuTextBox1
+            // lbl_ubicacion
             // 
-            this.bunifuTextBox1.AcceptsReturn = false;
-            this.bunifuTextBox1.AcceptsTab = false;
-            this.bunifuTextBox1.AnimationSpeed = 200;
-            this.bunifuTextBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.None;
-            this.bunifuTextBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.None;
-            this.bunifuTextBox1.AutoSizeHeight = true;
-            this.bunifuTextBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.bunifuTextBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuTextBox1.BackgroundImage")));
-            this.bunifuTextBox1.BorderColorActive = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            this.bunifuTextBox1.BorderColorDisabled = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            this.bunifuTextBox1.BorderColorHover = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.bunifuTextBox1.BorderColorIdle = System.Drawing.Color.Silver;
-            this.bunifuTextBox1.BorderRadius = 1;
-            this.bunifuTextBox1.BorderThickness = 1;
-            this.bunifuTextBox1.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.bunifuTextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.DefaultFont = new System.Drawing.Font("Century Gothic", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuTextBox1.DefaultText = "";
-            this.bunifuTextBox1.FillColor = System.Drawing.SystemColors.Control;
-            this.bunifuTextBox1.HideSelection = true;
-            this.bunifuTextBox1.IconLeft = null;
-            this.bunifuTextBox1.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.IconPadding = 10;
-            this.bunifuTextBox1.IconRight = null;
-            this.bunifuTextBox1.IconRightCursor = System.Windows.Forms.Cursors.IBeam;
-            this.bunifuTextBox1.Lines = new string[0];
-            this.bunifuTextBox1.Location = new System.Drawing.Point(28, 69);
-            this.bunifuTextBox1.MaxLength = 32767;
-            this.bunifuTextBox1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.bunifuTextBox1.Modified = false;
-            this.bunifuTextBox1.Multiline = false;
-            this.bunifuTextBox1.Name = "bunifuTextBox1";
-            stateProperties1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
-            stateProperties1.FillColor = System.Drawing.Color.Empty;
-            stateProperties1.ForeColor = System.Drawing.Color.Empty;
-            stateProperties1.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnActiveState = stateProperties1;
-            stateProperties2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
-            stateProperties2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
-            stateProperties2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
-            stateProperties2.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.bunifuTextBox1.OnDisabledState = stateProperties2;
-            stateProperties3.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            stateProperties3.FillColor = System.Drawing.Color.Empty;
-            stateProperties3.ForeColor = System.Drawing.Color.Empty;
-            stateProperties3.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnHoverState = stateProperties3;
-            stateProperties4.BorderColor = System.Drawing.Color.Silver;
-            stateProperties4.FillColor = System.Drawing.SystemColors.Control;
-            stateProperties4.ForeColor = System.Drawing.Color.Empty;
-            stateProperties4.PlaceholderForeColor = System.Drawing.Color.Empty;
-            this.bunifuTextBox1.OnIdleState = stateProperties4;
-            this.bunifuTextBox1.Padding = new System.Windows.Forms.Padding(3);
-            this.bunifuTextBox1.PasswordChar = '\0';
-            this.bunifuTextBox1.PlaceholderForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.bunifuTextBox1.PlaceholderText = "Ingrese el Código del Equipo";
-            this.bunifuTextBox1.ReadOnly = false;
-            this.bunifuTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.bunifuTextBox1.SelectedText = "";
-            this.bunifuTextBox1.SelectionLength = 0;
-            this.bunifuTextBox1.SelectionStart = 0;
-            this.bunifuTextBox1.ShortcutsEnabled = true;
-            this.bunifuTextBox1.Size = new System.Drawing.Size(257, 38);
-            this.bunifuTextBox1.Style = Bunifu.UI.WinForms.BunifuTextBox._Style.Material;
-            this.bunifuTextBox1.TabIndex = 22;
-            this.bunifuTextBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.bunifuTextBox1.TextMarginBottom = 0;
-            this.bunifuTextBox1.TextMarginLeft = 3;
-            this.bunifuTextBox1.TextMarginTop = 1;
-            this.bunifuTextBox1.TextPlaceholder = "Ingrese el Código del Equipo";
-            this.bunifuTextBox1.UseSystemPasswordChar = false;
-            this.bunifuTextBox1.WordWrap = true;
+            this.lbl_ubicacion.AutoSize = true;
+            this.lbl_ubicacion.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_ubicacion.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            this.lbl_ubicacion.Location = new System.Drawing.Point(385, 41);
+            this.lbl_ubicacion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_ubicacion.Name = "lbl_ubicacion";
+            this.lbl_ubicacion.Size = new System.Drawing.Size(40, 20);
+            this.lbl_ubicacion.TabIndex = 14;
+            this.lbl_ubicacion.Text = "ZONA";
             // 
-            // lbl_
+            // lbl_motor
             // 
-            this.lbl_.AutoSize = true;
-            this.lbl_.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
-            this.lbl_.Location = new System.Drawing.Point(24, 46);
-            this.lbl_.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.lbl_.Name = "lbl_";
-            this.lbl_.Size = new System.Drawing.Size(56, 20);
-            this.lbl_.TabIndex = 21;
-            this.lbl_.Text = "EQUIPO";
+            this.lbl_motor.AutoSize = true;
+            this.lbl_motor.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_motor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            this.lbl_motor.Location = new System.Drawing.Point(35, 41);
+            this.lbl_motor.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_motor.Name = "lbl_motor";
+            this.lbl_motor.Size = new System.Drawing.Size(56, 20);
+            this.lbl_motor.TabIndex = 13;
+            this.lbl_motor.Text = "EQUIPO";
+            // 
+            // btn_Buscar
+            // 
+            this.btn_Buscar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_Buscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(26)))), ((int)(((byte)(26)))));
+            this.btn_Buscar.FlatAppearance.BorderSize = 0;
+            this.btn_Buscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Buscar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Buscar.ForeColor = System.Drawing.Color.White;
+            this.btn_Buscar.Location = new System.Drawing.Point(977, 44);
+            this.btn_Buscar.Margin = new System.Windows.Forms.Padding(2);
+            this.btn_Buscar.Name = "btn_Buscar";
+            this.btn_Buscar.Size = new System.Drawing.Size(71, 58);
+            this.btn_Buscar.TabIndex = 12;
+            this.btn_Buscar.Text = "BUSCAR";
+            this.btn_Buscar.UseVisualStyleBackColor = false;
+            this.btn_Buscar.Click += new System.EventHandler(this.btn_Buscar_Click);
+            // 
+            // cbx_zona
+            // 
+            this.cbx_zona.BackColor = System.Drawing.SystemColors.Control;
+            this.cbx_zona.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbx_zona.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cbx_zona.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbx_zona.FormattingEnabled = true;
+            this.cbx_zona.Items.AddRange(new object[] {
+            "--Ingrese la Ubicación--",
+            "DESPACHOS",
+            "PINZA CHICA, GRANDE",
+            "TOLVA"});
+            this.cbx_zona.Location = new System.Drawing.Point(388, 67);
+            this.cbx_zona.Name = "cbx_zona";
+            this.cbx_zona.Size = new System.Drawing.Size(279, 29);
+            this.cbx_zona.TabIndex = 11;
+            this.cbx_zona.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.cbx_zona_KeyPress);
+            // 
+            // lbl_resultado
+            // 
+            this.lbl_resultado.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lbl_resultado.AutoSize = true;
+            this.lbl_resultado.Font = new System.Drawing.Font("Century Gothic", 11F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_resultado.Location = new System.Drawing.Point(93, 511);
+            this.lbl_resultado.Name = "lbl_resultado";
+            this.lbl_resultado.Size = new System.Drawing.Size(54, 18);
+            this.lbl_resultado.TabIndex = 20;
+            this.lbl_resultado.Text = "label1";
+            // 
+            // opciones
+            // 
+            this.opciones.Name = "opciones";
+            this.opciones.Size = new System.Drawing.Size(61, 4);
+            this.opciones.Closed += new System.Windows.Forms.ToolStripDropDownClosedEventHandler(this.opciones_Closed);
+            this.opciones.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.opciones_ItemClicked);
+            // 
+            // lbl_titulo
+            // 
+            this.lbl_titulo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lbl_titulo.AutoSize = true;
+            this.lbl_titulo.Font = new System.Drawing.Font("Century Gothic", 30F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_titulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(59)))), ((int)(((byte)(59)))));
+            this.lbl_titulo.Location = new System.Drawing.Point(345, 27);
+            this.lbl_titulo.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbl_titulo.Name = "lbl_titulo";
+            this.lbl_titulo.Size = new System.Drawing.Size(288, 47);
+            this.lbl_titulo.TabIndex = 3;
+            this.lbl_titulo.Text = "EQUIPOS 2022";
             // 
             // Mecanico
             // 
@@ -418,8 +323,6 @@
         private System.Windows.Forms.ContextMenuStrip opciones;
         private Bunifu.Framework.UI.BunifuCustomLabel lbl_titulo;
         private Bunifu.UI.WinForms.BunifuTextBox txt_Equipo;
-        private Bunifu.UI.WinForms.BunifuTextBox bunifuTextBox1;
-        private System.Windows.Forms.Label lbl_;
     }
 }
 

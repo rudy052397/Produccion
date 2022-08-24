@@ -14,8 +14,8 @@ namespace Producción
 {
     public partial class Principio : Form
     {
-        
-        public  Principio()
+
+        public Principio()
         {
             InitializeComponent();
             pnl_menu.Width = 296;
@@ -29,6 +29,10 @@ namespace Producción
             pb_electrico.Location = new Point(11, 10);
             pb_lista.Parent = btn_lista;
             pb_lista.Location = new Point(11, 10);
+            btn_mecanico.FlatAppearance.MouseOverBackColor = btn_mecanico.BackColor;
+            btn_electrico.FlatAppearance.MouseOverBackColor = btn_electrico.BackColor;
+            btn_lista.FlatAppearance.MouseOverBackColor = btn_lista.BackColor;
+            btn_informe.FlatAppearance.MouseOverBackColor = btn_informe.BackColor;
         }
 
         private void btn_refresh_Click(object sender, EventArgs e)
@@ -37,11 +41,10 @@ namespace Producción
         }
         private void btn_menu_Click(object sender, EventArgs e)
         {
-            //var t = new Transition(new TransitionType_EaseInEaseOut(1000));
 
             if (pnl_menu.Width == 296)
             {
-                Transition.run(this.pnl_menu, "Width",68, new TransitionType_EaseInEaseOut(200));
+                Transition.run(this.pnl_menu, "Width", 68, new TransitionType_EaseInEaseOut(200));
                 pb_logo.Size = new Size(65, 62);
                 pb_logo.Location = new Point(0, 3);
 
@@ -53,25 +56,9 @@ namespace Producción
                 pb_logo.Size = new Size(129, 145);
                 pb_logo.Location = new Point(85, -40);
             }
-
-            //if (pnl_menu.Width == 296)
-            //{
-            //    pnl_menu.Width = 68;
-            //    pb_logo.Size = new Size(65, 62);
-            //    pb_logo.Location = new Point(0, 3);
-                
-
-            //}
-                
-            //else
-            //{
-            //    pnl_menu.Width = 296;
-            //    pb_logo.Size = new Size(129, 145);
-            //    pb_logo.Location = new Point(85, -40);
-            //}
         }
-      
-       
+
+
         #region BOTONES_PRINCIPALES
         private void btn_mecanico_Click(object sender, EventArgs e)
         {
@@ -83,33 +70,31 @@ namespace Producción
             Frm.BringToFront();
             if (pnl_menu.Width == 296)
             {
-                pnl_menu.Width = 68;
+                Transition.run(this.pnl_menu, "Width", 68, new TransitionType_EaseInEaseOut(200));
                 pb_logo.Size = new Size(65, 62);
                 pb_logo.Location = new Point(0, 3);
-
-
             }
             foreach (Control control in pnl_menu.Controls)
             {
                 if (control is Button)
                 {
-                    control.BackColor = SystemColors.Control;
+                    control.BackColor = Color.WhiteSmoke;
                 }
             }
-            this.btn_mecanico.BackColor = Color.LightGray;
+            this.btn_mecanico.BackColor = Color.Silver;
             btn_menu.BringToFront();
 
         }
         private void btn_electrico_Click(object sender, EventArgs e)
         {
-            foreach (Control control in pnl_menu.Controls)
-            {
-                if (control is Button)
-                {
-                    control.BackColor = SystemColors.Control;
-                }
-            }
-            this.btn_electrico.BackColor = Color.LightGray;
+            //foreach (Control control in pnl_menu.Controls)
+            //{
+            //    if (control is Button)
+            //    {
+            //        control.BackColor = SystemColors.Control;
+            //    }
+            //}
+            //this.btn_electrico.BackColor = Color.LightGray;
             btn_menu.BringToFront();
         }
         private void btn_informe_Click(object sender, EventArgs e)
@@ -122,7 +107,7 @@ namespace Producción
             Frm_1.BringToFront();
             if (pnl_menu.Width == 296)
             {
-                pnl_menu.Width = 68;
+                Transition.run(this.pnl_menu, "Width", 68, new TransitionType_EaseInEaseOut(200));
                 pb_logo.Size = new Size(65, 62);
                 pb_logo.Location = new Point(0, 3);
 
@@ -132,12 +117,58 @@ namespace Producción
             {
                 if (control is Button)
                 {
-                    control.BackColor = SystemColors.Control;
+                    control.BackColor = Color.WhiteSmoke;
                 }
             }
-            this.btn_informe.BackColor = Color.LightGray;
+            this.btn_informe.BackColor = Color.Silver;
             btn_menu.BringToFront();
         }
+        private void btn_lista_Click(object sender, EventArgs e)
+        {
+
+        }
         #endregion
+
+        private void pb_mecanico_MouseEnter(object sender, EventArgs e)
+        {
+            Control control = ((Control)sender).Parent;
+            if (control.BackColor != Color.Silver)
+            {
+                control.BackColor = Color.Gainsboro;
+            }
+
+
+        }
+
+        private void pb_mecanico_MouseLeave(object sender, EventArgs e)
+        {
+            Control control = ((Control)sender).Parent;
+            if (control.BackColor != Color.Silver)
+            {
+                control.BackColor = Color.WhiteSmoke;
+            }
+        }
+
+        private void btn_mecanico_MouseEnter(object sender, EventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.Silver)
+            {
+                ((Control)sender).BackColor = Color.Gainsboro;
+            }
+        }
+
+        private void btn_mecanico_MouseLeave(object sender, EventArgs e)
+        {
+            if (((Control)sender).BackColor != Color.Silver)
+            {
+                ((Control)sender).BackColor = Color.WhiteSmoke;
+            }
+        }
+
+        private void btn_mecanico_BackColorChanged(object sender, EventArgs e)
+        {
+            ((Button)sender).FlatAppearance.MouseOverBackColor = ((Button)sender).BackColor;
+        }
+
     }
 }
