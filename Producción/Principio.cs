@@ -128,27 +128,7 @@ namespace Producción
 
         }
         #endregion
-
-        private void pb_mecanico_MouseEnter(object sender, EventArgs e)
-        {
-            Control control = ((Control)sender).Parent;
-            if (control.BackColor != Color.Silver)
-            {
-                control.BackColor = Color.Gainsboro;
-            }
-
-
-        }
-
-        private void pb_mecanico_MouseLeave(object sender, EventArgs e)
-        {
-            Control control = ((Control)sender).Parent;
-            if (control.BackColor != Color.Silver)
-            {
-                control.BackColor = Color.WhiteSmoke;
-            }
-        }
-
+        #region BUTTONS_TRANSITION
         private void btn_mecanico_MouseEnter(object sender, EventArgs e)
         {
             if (((Control)sender).BackColor != Color.Silver)
@@ -164,11 +144,30 @@ namespace Producción
                 ((Control)sender).BackColor = Color.WhiteSmoke;
             }
         }
+        private void pb_mecanico_MouseEnter(object sender, EventArgs e)
+        {
+            Control control = ((Control)sender).Parent;
+            if (control.BackColor != Color.Silver)
+            {
+                control.BackColor = Color.Gainsboro;
+            }
+        }
+
+        private void pb_mecanico_MouseLeave(object sender, EventArgs e)
+        {
+            Control control = ((Control)sender).Parent;
+            if (control.BackColor != Color.Silver)
+            {
+                control.BackColor = Color.WhiteSmoke;
+            }
+        }
+
 
         private void btn_mecanico_BackColorChanged(object sender, EventArgs e)
         {
             ((Button)sender).FlatAppearance.MouseOverBackColor = ((Button)sender).BackColor;
         }
+        #endregion
 
     }
 }

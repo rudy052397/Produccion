@@ -20,14 +20,28 @@ namespace Producción
         private void Inicio_Resize(object sender, EventArgs e)
         {
             this.lbl_titulo.Location = new Point((this.Size.Width / 2) - 150, this.lbl_titulo.Location.Y);
+            if (this.Size.Width < 1100)
+            {
+                this.gb_Busqueda.Height = 193;
+                this.lbl_zona.Location = new Point(37, 112);
+                this.cbx_zona.Location = new Point(32, 145);
+                this.dgv_resultado.Location = new Point(this.dgv_resultado.Location.X, 313);
+            }
+            else
+            {
+                this.gb_Busqueda.Height = 105;
+                this.lbl_zona.Location = new Point(643, 21);
+                this.cbx_zona.Location = new Point(640, 54);
+                this.dgv_resultado.Location = new Point(this.dgv_resultado.Location.X, 236);
+            }
         }
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
-            dgv_resultado.DataSource = MEdio.Buscar(ver(),txt_Equipo.Text,cbx_zona.Text);
+            dgv_resultado.DataSource = MEdio.Buscar(ver(), txt_Codigo.Text, cbx_zona.Text);
         }
         private void txt_Equipo_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if((int)e.KeyChar==(int)Keys.Enter)
+            if ((int)e.KeyChar == (int)Keys.Enter)
             {
                 btn_Buscar.PerformClick();
             }
@@ -44,7 +58,7 @@ namespace Producción
         {
             try
             {
-                if (dgv_resultado.Columns.Count>0)
+                if (dgv_resultado.Columns.Count > 0)
                 {
                     foreach (DataGridViewRow i in dgv_resultado.Rows)
                     {
@@ -62,7 +76,7 @@ namespace Producción
                     dgv_resultado.Columns["FECHA"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleRight;
                     dgv_resultado.Columns["ID"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 }
-                
+
             }
             catch (Exception ex) { }
             lbl_resultado.Text = "Se encontraron " + dgv_resultado.Rows.Count.ToString() + " resultados";
@@ -105,7 +119,7 @@ namespace Producción
         }
         private void btn_refresh_Click(object sender, EventArgs e)
         {
-            txt_Equipo.Text = "";
+            txt_Codigo.Text = "";
             cbx_zona.DataSource = MEdio.comboBox();
             dgv_resultado.DataSource = MEdio.inicio();
         }
@@ -119,11 +133,11 @@ namespace Producción
         }
         private int ver()
         {
-            if (txt_Equipo.Text.TrimStart() == "" && cbx_zona.SelectedIndex == 0)
+            if (txt_Codigo.Text.TrimStart() == "" && cbx_zona.SelectedIndex == 0)
                 return 0;
-            else if (txt_Equipo.Text.TrimStart() == "" && cbx_zona.SelectedIndex > 0)
+            else if (txt_Codigo.Text.TrimStart() == "" && cbx_zona.SelectedIndex > 0)
                 return 1;
-            else if (txt_Equipo.Text.TrimStart() != "" && cbx_zona.SelectedIndex == 0)
+            else if (txt_Codigo.Text.TrimStart() != "" && cbx_zona.SelectedIndex == 0)
                 return 2;
             else return 3;
 
