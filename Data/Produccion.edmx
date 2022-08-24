@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="PRODUCCIONModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Bitacora">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_EQUIPO" Type="int" Nullable="false" />
+          <Property Name="FECHA" Type="date" />
+          <Property Name="ASUNTO" Type="nvarchar" MaxLength="50" />
+          <Property Name="DESCRIPCION" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityType Name="Equipos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ZONA" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="CODIGO-INT" Type="nvarchar" MaxLength="50" />
+          <Property Name="CODIGO-ADM" Type="nvarchar" MaxLength="50" />
+          <Property Name="NOMBRE" Type="nvarchar" MaxLength="50" />
+          <Property Name="CANTIDAD" Type="tinyint" />
+          <Property Name="UNIDAD" Type="tinyint" />
+        </EntityType>
+        <EntityType Name="Lubricacion">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ID_EQUIPO" Type="int" Nullable="false" />
+          <Property Name="PTOS_LUB" Type="nvarchar" MaxLength="50" />
+          <Property Name="LUBRICANTE" Type="nvarchar" MaxLength="50" />
+          <Property Name="TIPO" Type="nvarchar" MaxLength="50" />
+          <Property Name="PTO" Type="tinyint" />
+          <Property Name="CANTIDAD" Type="nvarchar" MaxLength="50" />
+          <Property Name="TIEMPO" Type="tinyint" />
+          <Property Name="UNIDAD_TIEMPO" Type="tinyint" />
+          <Property Name="ESTADO" Type="nvarchar" MaxLength="50" />
+          <Property Name="PRINCIPAL" Type="bit" />
+        </EntityType>
+        <EntityContainer Name="PRODUCCIONModelStoreContainer">
+          <EntitySet Name="Bitacora" EntityType="Self.Bitacora" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Equipos" EntityType="Self.Equipos" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Lubricacion" EntityType="Self.Lubricacion" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="PRODUCCIONModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="PRODUCCIONEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Bitacora" EntityType="PRODUCCIONModel.Bitacora" />
+          <EntitySet Name="Equipos" EntityType="PRODUCCIONModel.Equipos" />
+          <EntitySet Name="Lubricacion" EntityType="PRODUCCIONModel.Lubricacion" />
+        </EntityContainer>
+        <EntityType Name="Bitacora">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_EQUIPO" Type="Int32" Nullable="false" />
+          <Property Name="FECHA" Type="DateTime" Precision="0" />
+          <Property Name="ASUNTO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="DESCRIPCION" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+        <EntityType Name="Equipos">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ZONA" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CODIGO_INT" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CODIGO_ADM" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="NOMBRE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="CANTIDAD" Type="Byte" />
+          <Property Name="UNIDAD" Type="Byte" />
+        </EntityType>
+        <EntityType Name="Lubricacion">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ID_EQUIPO" Type="Int32" Nullable="false" />
+          <Property Name="PTOS_LUB" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="LUBRICANTE" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TIPO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PTO" Type="Byte" />
+          <Property Name="CANTIDAD" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="TIEMPO" Type="Byte" />
+          <Property Name="UNIDAD_TIEMPO" Type="Byte" />
+          <Property Name="ESTADO" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+          <Property Name="PRINCIPAL" Type="Boolean" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="PRODUCCIONModelStoreContainer" CdmEntityContainer="PRODUCCIONEntities">
+          <EntitySetMapping Name="Bitacora">
+            <EntityTypeMapping TypeName="PRODUCCIONModel.Bitacora">
+              <MappingFragment StoreEntitySet="Bitacora">
+                <ScalarProperty Name="DESCRIPCION" ColumnName="DESCRIPCION" />
+                <ScalarProperty Name="ASUNTO" ColumnName="ASUNTO" />
+                <ScalarProperty Name="FECHA" ColumnName="FECHA" />
+                <ScalarProperty Name="ID_EQUIPO" ColumnName="ID_EQUIPO" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Equipos">
+            <EntityTypeMapping TypeName="PRODUCCIONModel.Equipos">
+              <MappingFragment StoreEntitySet="Equipos">
+                <ScalarProperty Name="UNIDAD" ColumnName="UNIDAD" />
+                <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+                <ScalarProperty Name="NOMBRE" ColumnName="NOMBRE" />
+                <ScalarProperty Name="CODIGO_ADM" ColumnName="CODIGO-ADM" />
+                <ScalarProperty Name="CODIGO_INT" ColumnName="CODIGO-INT" />
+                <ScalarProperty Name="ZONA" ColumnName="ZONA" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Lubricacion">
+            <EntityTypeMapping TypeName="PRODUCCIONModel.Lubricacion">
+              <MappingFragment StoreEntitySet="Lubricacion">
+                <ScalarProperty Name="PRINCIPAL" ColumnName="PRINCIPAL" />
+                <ScalarProperty Name="ESTADO" ColumnName="ESTADO" />
+                <ScalarProperty Name="UNIDAD_TIEMPO" ColumnName="UNIDAD_TIEMPO" />
+                <ScalarProperty Name="TIEMPO" ColumnName="TIEMPO" />
+                <ScalarProperty Name="CANTIDAD" ColumnName="CANTIDAD" />
+                <ScalarProperty Name="PTO" ColumnName="PTO" />
+                <ScalarProperty Name="TIPO" ColumnName="TIPO" />
+                <ScalarProperty Name="LUBRICANTE" ColumnName="LUBRICANTE" />
+                <ScalarProperty Name="PTOS_LUB" ColumnName="PTOS_LUB" />
+                <ScalarProperty Name="ID_EQUIPO" ColumnName="ID_EQUIPO" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
