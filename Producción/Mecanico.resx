@@ -117,27 +117,50 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 17</value>
-  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="txt_nombre.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAAPgAAAAmCAYAAADp5VZUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABFSURBVHhe7cNBDQAwCASw+TfFOQNU7EHapA8AAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAL5JUrvVa9MD7gYk9soFFXUAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAAP0AAAAmCAYAAAAPzJ0QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABFSURBVHhe7cNBDQAwCASw+TfFOQNE7Eeb9AEAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPBJktqtXpgefPE1Mei6OPMAAAAASUVORK5CYII=
 </value>
   </data>
   <data name="txt_Codigo.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAANQAAAAmCAYAAAC8hLUKAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABASURBVHhe7cNBDQAwCASw+TfFOQM87EfapA8AAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAIADktRu9Xd6AMBGsAs7Ui2MAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAANUAAAAmCAYAAABTRt40AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAA/SURBVHhe7cNBDQAwCASw+TfFOQNEjF+b9AEAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAMCJJLVb/TE9iPKzSvBX1PsAAAAASUVORK5CYII=
 </value>
   </data>
   <metadata name="opciones.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>177, 17</value>
   </metadata>
+  <metadata name="bunifuDragControl1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <data name="bunifuPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAABB8AAAB1CAYAAAAGGEmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPtSURBVHhe7dotUttRFMbhyMjISiSykiVEIrOELIEdsASW
+        gERWnuOQSGRlJRKZ3n/mDjNNP4aSvlXPM/NOODdZwW9YAQAAAPxXVbXr7oexr2MHMzMzMzMzM7N3bOkI
+        X6pqPxPDz8aXm+VHY/fj7+uxi/kVAAAAwB8tHWFs2913Y4+/7AqzTuzmCQAAAPAhVXXV3U/jcz2fjo/7
+        pUzMEwAAAOAsVXXT3bfzfPuvh+08AQAAAM5SVZfd/TzPY3x4GY+beQIAAACcrbsP88+TAwAAAOAfEB8A
+        AACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAA
+        AIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACA
+        KPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgS
+        HwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEB
+        AAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAA
+        AIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAA
+        iBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo
+        8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIf
+        AAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEA
+        AACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAA
+        gCjxAQAAAIgSHwAAAIAo8QEAAACIEh8AAACAKPEBAAAAiBIfAAAAgCjxAQAAAIgSHwAAAIAo8QEAAACI
+        Oo0Pr1W1nicAAADA2U7jw2NVXc0TAAAA4CxV9am7v83zGB9ux+PNPAEAAADOUlW77r6f5/FhPR6ex+fF
+        fAIAAAD4kN92hvHweX6xH9vMZwAAAIB3WaLD2HV3P43P7Xz+0RIdxg/uxl7GDmZmZmZmZmZmf7HXsYeq
+        upypAQAAACBttfoOHmS2qVWT2qwAAAAASUVORK5CYII=
+</value>
+  </data>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>76</value>
   </metadata>

@@ -19,21 +19,7 @@ namespace Producción
         }
         private void Inicio_Resize(object sender, EventArgs e)
         {
-            this.lbl_titulo.Location = new Point((this.Size.Width / 2) - 150, this.lbl_titulo.Location.Y);
-            if (this.Size.Width < 1100)
-            {
-                this.gb_Busqueda.Height = 193;
-                this.lbl_zona.Location = new Point(37, 112);
-                this.cbx_zona.Location = new Point(32, 145);
-                this.dgv_resultado.Location = new Point(this.dgv_resultado.Location.X, 313);
-            }
-            else
-            {
-                this.gb_Busqueda.Height = 105;
-                this.lbl_zona.Location = new Point(643, 21);
-                this.cbx_zona.Location = new Point(640, 54);
-                this.dgv_resultado.Location = new Point(this.dgv_resultado.Location.X, 236);
-            }
+              
         }
         private void btn_Buscar_Click(object sender, EventArgs e)
         {
